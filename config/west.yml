@@ -2,20 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: eyelash
-      url-base: https://github.com/a741725193
-    - name: urob
-      url-base: https://github.com/urob
   projects:
+    - name: eyelash_corne
+      url: https://github.com/a741725193/zmk-new_corne
+      revision: main
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3.0
       import: app/west.yml
-    - name: zmk-new_corne
-      remote: eyelash
-      revision: main
-    - name: zmk-helpers
-      remote: urob
-      revision: main
   self:
     path: config
